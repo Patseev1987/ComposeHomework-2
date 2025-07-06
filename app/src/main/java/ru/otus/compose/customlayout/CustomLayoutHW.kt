@@ -23,8 +23,9 @@ fun CustomLayoutHW(
     content: @Composable () -> Unit = { }
 ) {
     // Replace Column with your custom layout
-    Column(
+    CustomBogdanLayout(
         modifier = modifier,
+        columns = columns,
     ) {
         content()
     }
